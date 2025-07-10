@@ -31,7 +31,46 @@
 
             <hr class="sidebar-divider">
             <div class="text-center d-none d-md-inline">
-                <button class="rounded-circle border-0" id="sidebarToggle"></button>
+               <div id="MenuLateral" style="background-color: #017e38;">
+                <li class="nav-item">
+                    <a class="nav-link" href="<%= request.getContextPath() %>/Registro">
+                        <i class="bi bi-check-square"></i>
+                        <span>Registro</span>
+                    </a>
+                </li>
+            </div>
+            </div>
+                        <div id="MenuLateral" style="background-color: #017e38;">
+                <li class="nav-item">
+                    <a class="nav-link" href="<%= request.getContextPath() %>/Perfil">
+                        <i class="bi bi-check-square"></i>
+                        <span>Perfil</span>
+                    </a>
+                </li>
+            </div>
+                        <div id="MenuLateral" style="background-color: #017e38;">
+                <li class="nav-item">
+                    <a class="nav-link" href="<%= request.getContextPath() %>/Mensaje">
+                        <i class="bi bi-check-square"></i>
+                        <span>Mensaje</span>
+                    </a>
+                </li>
+            </div>
+                        <div id="MenuLateral" style="background-color: #017e38;">
+                <li class="nav-item">
+                    <a class="nav-link" href="<%= request.getContextPath() %>/login">
+                        <i class="bi bi-check-square"></i>
+                        <span>login</span>
+                    </a>
+                </li>
+            </div>
+                        <div id="MenuLateral" style="background-color: #017e38;">
+                <li class="nav-item">
+                    <a class="nav-link" href="<%= request.getContextPath() %>/Valoraciones">
+                        <i class="bi bi-check-square"></i>
+                        <span>Valoraciones</span>
+                    </a>
+                </li>
             </div>
         </ul>
         <!-- End of Sidebar -->
@@ -42,12 +81,21 @@
             <div id="content">
 
                 <div id="MenuPerfil">
-
+        <header class="header bg-primary text-white text-center p-4">
+        <h1>TruequePlace</h1>
+        <p class="lead">Intercambia productos y servicios sin dinero</p>
+    </header>
 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
     <!-- Topbar Navbar -->
-    <ul class="navbar-nav ml-auto">
-
-        <!-- Nav Item - Search Dropdown (Visible Only XS) -->
+    <!--<center>
+        <header class="header bg-primary text-white text-center p-4">
+        <h1>TruequePlace</h1>
+    <a href="header.jsp"></a>
+        <p class="lead">Intercambia productos y servicios sin dinero</p>
+    </header>
+    </center>-->
+    
+   <!-- Nav Item - Search Dropdown (Visible Only XS) -->
         <li class="nav-item dropdown no-arrow d-sm-none">
             <a class="nav-link dropdown-toggle" href="#" id="searchDropdown" role="button"
                data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
@@ -81,7 +129,7 @@
             <div class="dropdown-list dropdown-menu dropdown-menu-end shadow animated--grow-in"
                  aria-labelledby="alertsDropdown">
                 <h6 class="dropdown-header">
-                    Central TelefÃ³nica
+                    Central Telefónica
                 </h6>
                 <a class="dropdown-item d-flex align-items-center" href="#">
                     <div class="mr-3">
@@ -102,7 +150,7 @@
                         </div>
                     </div>
                     <div>
-                        <div class="small text-gray-500">Central TelefÃ³nica</div>
+                        <div class="small text-gray-500">Central Telefónica</div>
                         <span class="font-weight-bold">(+51) 748-4000</span>
                     </div>
 
@@ -115,7 +163,7 @@
                     </div>
                     <div>
                         <div class="small text-gray-500">Servicio al cliente</div>
-                        <span class="font-weight-bold">(+51) 204 6900 opciÃ³n 5</span>
+                        <span class="font-weight-bold">(+51) 204 6900 opción 5</span>
                     </div>
 
                 </a>
@@ -137,7 +185,7 @@
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
                         <span>
-                            &copy;arlos Subauste 2025
+                            &copy;arlos NO HAY DARIO 2025
                         </span>
                     </div>
                 </div>
