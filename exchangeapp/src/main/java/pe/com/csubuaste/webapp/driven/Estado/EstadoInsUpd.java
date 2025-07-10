@@ -20,9 +20,7 @@ public class EstadoInsUpd extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         String accion = req.getParameter("action");
-        System.out.println("entro al do get");
         if (accion.trim().toLowerCase().equals("eliminar")) {
-            System.out.println("entro al iff");
             srv.eliminar(Long.parseLong(req.getParameter("id")), false);
             resp.sendRedirect("index.jsp");
             return;

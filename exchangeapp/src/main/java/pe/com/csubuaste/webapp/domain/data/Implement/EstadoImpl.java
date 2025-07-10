@@ -16,7 +16,7 @@ public class EstadoImpl implements IRepositoryBase<Estado> {
     @Override
     public List<Estado> listar() {
         List<Estado> lstEstado = new ArrayList<>();
-        String sql = "SELECT idEstado,descripcion,estado,fechaCreacion,fechaActualizacion FROM estado ";
+        String sql = "SELECT idEstado,descripcion,estado,fechaCreacion,fechaActualizacion FROM estado where estado=1 ";
 
         try (
                 Connection conn = getConnection();
@@ -71,17 +71,16 @@ public class EstadoImpl implements IRepositoryBase<Estado> {
 
     @Override
     public void eliminar(Long id,boolean estado) {
-        String sql="UPDATE estado set estado=0";
+        String sql="UPDATE estado set estado=? where idEstado=?";
         try(
                 Connection conn = getConnection();
                 PreparedStatement ps = conn.prepareStatement(sql);
                 ){
 
-            //ps.setInt(1, id.intValue());
-            conn.setAutoCommit(true);
-            int val = ps.executeUpdate();
-            System.out.println(val);
-
+            ps.setBoolean(1, estado);
+            ps.setInt(2, id.intValue());
+            ps.executeUpdate();
+            
         }catch (SQLException ex){
             ex.printStackTrace();
         }

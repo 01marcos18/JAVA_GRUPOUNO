@@ -27,7 +27,7 @@
                 <td><%= estado.getFechaCreacion() %></td>
                 <td><%= estado.getFechaActualizacion() %></td>
                 <td><a class="btn btn-success" type="button" href="EstadoInsUpd?action=editar&id=<%=estado.getIdEstado()%>&desc=<%=estado.getDescripcion()%>&estado=<%=estado.isEstado()%>">Editar</a></td>
-                <td><a class="btn btn-danger" type="button" href="Estado?action=eliminar&id=<%=estado.getIdEstado()%>">Eliminar</a></td>
+                <td><a class="btn btn-danger" type="button" href="EstadoInsUpd?action=eliminar&id=<%=estado.getIdEstado()%>&estado=<%=estado.isEstado()%>">Eliminar</a></td>
             </tr>
         <%
                 }
